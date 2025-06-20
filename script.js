@@ -1,11 +1,57 @@
 
 document.addEventListener("DOMContentLoaded", function () {
+        const botoes = document.querySelectorAll(".loja-categorias button");
+        const produtos = document.querySelectorAll(".loja-lista .produto");
+    
+        botoes.forEach(botao => {
+          botao.addEventListener("click", () => {
+            // Remover a classe 'active' de todos os botões
+            botoes.forEach(btn => btn.classList.remove("active"));
+            botao.classList.add("active");
+    
+            const categoria = botao.textContent.trim();
+    
+            produtos.forEach(produto => {
+              const produtoCategoria = produto.getAttribute("data-category");
+              if (categoria === "Todos" || produtoCategoria === categoria) {
+                produto.style.display = "block";
+              } else {
+                produto.style.display = "none";
+              }
+
     // Inicialização do Swiper
     const swiper = new Swiper('.swiper', {
-        loop: true,
-        autoplay: { delay: 4000, disableOnInteraction: false },
-        pagination: { el: '.swiper-pagination', clickable: true },
-        navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+    loop: true,
+    autoplay: { delay: 4000, disableOnInteraction: false },
+    pagination: { el: '.swiper-pagination', clickable: true },
+    navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+  });
+
+  function showTab(event, id) {
+    document.querySelectorAll('.tab-content').forEach(tab => tab.classList.remove('active'));
+    document.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+    event.currentTarget.classList.add('active');
+aplicarFiltro();
+  }
+        
+   function aplicarFiltro() {
+    const valorSelecionado = document.getElementById('filtroValor').value;
+    const tabelaVisivel = document.querySelector('.tab-content.active table');
+    if (!tabelaVisivel) return;
+
+    tabelaVisivel.querySelectorAll('tbody tr').forEach(row => {
+      const precoTexto = row.children[1].textContent.replace('R$', '').replace(',', '.').trim();
+      const preco = parseFloat(precoTexto);
+      let mostrar = true;
+
+      if (!isNaN(preco)) {
+        if (valorSelecionado === '50') mostrar = preco <= 50;
+        else if (valorSelecionado === '100') mostrar = preco > 50 && preco <= 100;
+        else if (valorSelecionado === '101') mostrar = preco > 100;
+      }
+
+      row.style.display = mostrar || valorSelecionado === 'todos' ? '' : 'none';
     });
 
     // Controle de abas de preços
