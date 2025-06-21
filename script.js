@@ -53,7 +53,24 @@ aplicarFiltro();
 
       row.style.display = mostrar || valorSelecionado === 'todos' ? '' : 'none';
     });
+      }
 
+        function printTabelaPrecos() {
+    const originalContent = document.body.innerHTML;
+    const section = document.getElementById('precos').cloneNode(true);
+    const printWindow = window.open('', '', 'width=800,height=600');
+    printWindow.document.write('<html><head><title>Imprimir Tabela de Preços</title>');
+    printWindow.document.write('<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">');
+    printWindow.document.write('<style>body{font-family:Montserrat,sans-serif;padding:20px;}table{width:100%;border-collapse:collapse;}th,td{border:1px solid #ccc;padding:8px;text-align:left;}th{background:#409FDA;color:#fff;}button{display:none;}</style>');
+    printWindow.document.write('</head><body >');
+    printWindow.document.write(section.innerHTML);
+    printWindow.document.write('</body></html>');
+    printWindow.document.close();
+    printWindow.focus();
+    printWindow.print();
+    printWindow.close();
+  }
+});
     // Controle de abas de preços
     document.querySelectorAll('.tab-button').forEach(button => {
         button.addEventListener('click', function(event) {
