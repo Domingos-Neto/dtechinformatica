@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dtech Informática</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" rel="stylesheet" />
+</head>
+<body id="topo">
+
+    <!-- Exemplo de Produto com botão MercadoPago -->
+    <div class="produto" data-category="Periféricos">
+        <img src="https://oechsle.vteximg.com.br/arquivos/ids/4553144/image.jpg" alt="Mouse Gamer" />
+        <h4>Mouse Gamer</h4>
+        <p>R$ 75,00</p>
+
+        <script src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js"
+            data-preference-id="57091170-99fef910-3d8e-45ee-9737-b7b600b0e4a6"
+            data-source="button">
+        </script>
+
+        <div style="margin-top: 10px;">
+            <a href="https://wa.me/5588997139954?text=Olá! Gostaria de comprar o produto: Mouse Gamer - R$75,00." target="_blank">WhatsApp</a>
+            <a href="checkout.html?produto=Mouse%20Gamer">Checkout Interno</a>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
