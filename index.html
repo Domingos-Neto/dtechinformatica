@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dtech Informática</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="topo">
+    <header style="display: flex; align-items: center; justify-content: space-between; padding: 10px 30px; background: #fff; border-bottom: 2px solid #409FDA; position: fixed; top: 0; width: 100%; z-index: 100;">
+        <!-- Logo clicável -->
+        <a href="#topo" style="display: flex; align-items: center;">
+            <img alt="Logo" class="logo" src="https://i.postimg.cc/6qv2fmsf/nova-logo-aumentada.png" style="height: 110px; max-height: 105px;" />
+        </a>
+        <!-- Rádio -->
+        <a href="https://radiosaovivo.net/so-forro-fm/" style="display: flex; align-items: center; text-decoration: none; color: #409FDA; font-weight: 600; gap: 8px;" target="_blank">
+            <i class="fas fa-radio" style="font-size: 30px;"></i>
+            <span>Ouça um forrozim</span>
+        </a>
+        <!-- Navegação -->
+        <nav style="display: flex; gap: 20px;">
+            <a href="#servicos">Serviços</a>
+            <a href="#precos">Preços</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="https://cdn.awsli.com.br/1000x5000/2547/2547358/arquivos/Blog%20computadores.png" /></div>
+            <div class="swiper-slide"><img src="https://www.claroshop.com/c/algolia/assets/portada/lenovo-computo.webp" /></div>
+            <div class="swiper-slide"><img src="https://www.claroshop.com/c/algolia/assets/portada/computo.webp" /></div>
+            <div class="swiper-slide"><img src="https://www.trendmut.com/wp-content/uploads/2019/02/laptop-vs-desktop.png" /></div>
+            <div class="swiper-slide"><img src="https://img-c.udemycdn.com/course/750x422/3786450_b31a.jpg" /></div>
+            <div class="swiper-slide"><img src="https://cptstatic.s3.amazonaws.com/imagens/enviadas/materias/materia12462/rede-computadores-artigos-cpt.jpg" /></div>
+            <div class="swiper-slide"><img src="https://www.storageja.com.br/assets/img/blog/rede-de-computadores-1445772827.png" /></div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+    <section id="servicos">
+        <h2>Nossos Serviços</h2>
+        <div class="servicos-grid">
+            <div class="servico">
+                <i class="fas fa-tools"></i>
+                <h3>Manutenção de Computadores</h3>
+                <p>Reparos, formatações, instalação de sistemas, limpeza interna e otimizações para garantir o melhor desempenho do seu computador.</p>
+            </div>
+            <div class="servico">
+                <i class="fas fa-laptop"></i>
+                <h3>Notebooks / Netbooks</h3>
+                <p>Formatação, limpeza, troca de peça e suporte completo para portáteis.</p>
+            </div>
+            <div class="servico">
+                <i class="fas fa-print"></i>
+                <h3>Manutenção de Impressoras</h3>
+                <p>Conserto, instalação, configuração e recarga de cartuchos para impressoras de várias marcas e modelos.</p>
+            </div>
+            <div class="servico">
+                <i class="fas fa-ethernet"></i>
+                <h3>Roteadores</h3>
+                <p>Configuração, instalação, troca de equipamentos e suporte técnico para sua rede de internet doméstica ou empresarial.</p>
+            </div>
+            <div class="servico">
+                <i class="fas fa-wifi"></i>
+                <h3>Configuração de Rede Wi-Fi</h3>
+                <p>Instalação e otimização de redes Wi-Fi, garantindo sinal forte e conexão estável em sua residência ou empresa.</p>
+            </div>
+            <div class="servico">
+                <i class="fas fa-network-wired"></i>
+                <h3>Infraestrutura de Rede</h3>
+                <p>Serviços completos de infraestrutura de redes, incluindo montagem de rede estruturada, passagem de cabos, instalação de pontos de rede corporativas e residenciais, garantindo conectividade estável, organizada e eficiente.</p>
+            </div>
+            <div class="servico">
+                <i class="fas fa-microchip"></i>
+                <h3>Troca de Peças de Hardware</h3>
+                <p>Substituição de componentes como memória RAM, HD, fontes, placas-mãe e outros componentes internos.</p>
+            </div>
+            <div class="servico">
+                <i class="fas fa-computer-mouse"></i>
+                <h3>Periféricos e Equipamentos</h3>
+                <p>Trabalhamos com a venda de uma ampla linha de periféricos e equipamentos de rede das melhores marcas do mercado. Oferecemos teclados, mouses, monitores, impressoras, caixas de som, adaptadores, switches, roteadores, cabos de rede e muito mais.</p>
+            </div>
+        </div>
+    </section>
+    <section id="precos">
+  <h2>Lista de Serviços e Preços</h2>
+  <div style="text-align: right; margin-bottom: 10px;">
+  <div style="text-align: right; margin-bottom: 10px;"
+  </button>
+  </div>
+  <div class="tabs">
+    <button class="tab-button active" onclick="showTab(event, 'computadores')"><i class="fas fa-desktop"></i>Computadores</button>
+    <button class="tab-button" onclick="showTab(event, 'impressoras')"><i class="fas fa-print"></i>Impressoras</button>
+    <button class="tab-button" onclick="showTab(event, 'redes')"><i class="fas fa-network-wired"></i>Redes</button>
+    <button class="tab-button" onclick="showTab(event, 'notebooks')"><i class="fas fa-laptop"></i>Notebooks</button>
+    <button class="tab-button" onclick="showTab(event, 'roteadores')"><i class="fas fa-wifi"></i>Roteadores</button>
+    <button class="tab-button" onclick="showTab(event, 'hd')"><i class="fas fa-hdd"></i>HDs</button>
+    <button class="tab-button" onclick="showTab(event, 'outros')"><i class="fas fa-shopping-cart"></i>Outros</button>
+  </div>
+  <button onclick="printTabelaPrecos()" style="padding: 10px 20px; background-color: #409FDA; border: none; color: white; border-radius: 5px; cursor: pointer;">
+      <i class="fas fa-print"></i> Imprimir Tabela
+    </button>
+  </div>
+        <div id="computadores" class="tab-content active">
+    <table class="tabela-precos">
+      <thead><tr><th>Serviço</th><th>Valor</th><th>Prazo</th></tr></thead>
+      <tbody>
+      <tr><td>Formatação sem backup</td><td>R$ 60,00</td><td>2 dias</td></tr>
+      <tr><td>Formatação com backup até 500 GB</td><td>R$ 90,00</td><td>2 dias</td></tr>
+      <tr><td>Formatação com backup acima de 500 GB</td><td>R$ 130,00</td><td>2 dias</td></tr>
+      <tr><td>Reinstalação de sistema operacional</td><td>R$ 160,00</td><td>2 dias</td></tr>
+      <tr><td>Limpeza preventiva interna/externa</td><td>R$ 60,00</td><td>2 dias</td></tr>
+      <tr><td>Instalação de aplicativos</td><td>R$ 40,00</td><td>1 dia</td></tr>
+      <tr><td>Recuperação do sistema</td><td>R$ 45,00</td><td>2 dias</td></tr>
+      <tr><td>Verificação e remoção de vírus</td><td>R$ 20,00</td><td>1 dia</td></tr>
+      <tr><td>Só substituição de fonte</td><td>R$ 50,00</td><td>1 dia</td></tr>
+      <tr><td>Montagem completa de PC</td><td>R$ 80,00</td><td>2 dias</td></tr>
+      <tr><td>Reinstalação de sistema operacional</td><td>R$ 160,00</td><td>2 dias</td></tr>
+      <tr><td>Limpeza preventiva interna/externa</td><td>R$ 60,00</td><td>2 dias</td></tr>
+      <tr><td>Instalação de aplicativos</td><td>R$ 40,00</td><td>1 dia</td></tr>
+      <tr><td>Recuperação do sistema</td><td>R$ 45,00</td><td>2 dias</td></tr>
+      <tr><td>Verificação e remoção de vírus</td><td>R$ 20,00</td><td>1 dia</td></tr>
+      <tr><td>Só substituição de fonte</td><td>R$ 50,00</td><td>1 dia</td></tr>
+      <tr><td>Montagem completa de PC</td><td>R$ 80,00</td><td>2 dias</td></tr>
+      <tr><td>HD danificado ou apagado</td><td>Consulte-nos</td><td></td></tr>
+      </tbody>
+    </table>
+  </div>
+        <div id="impressoras" class="tab-content">
+    <table class="tabela-precos">
+      <thead><tr><th>Serviço</th><th>Valor</th><th>Prazo</th></tr></thead>
+      <tbody>
+        <tr><td>Instalação e Configuração</td><td>R$ 70,00</td><td>1 dia</td></tr>
+        <tr><td>Correção de falhas de impressão</td><td>R$ 60,00</td><td>1 dia</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div id="redes" class="tab-content">
+    <table class="tabela-precos">
+      <thead><tr><th>Serviço</th><th>Valor</th><th>Prazo</th></tr></thead>
+      <tbody>
+        <tr><td>Configuração de Rede Sem Fio</td><td>R$ 60,00</td><td>1 dia</td></tr>
+        <tr><td>Compartilhamento de impressoras</td><td>R$ 50,00</td><td>1 dia</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div id="notebooks" class="tab-content">
+    <table class="tabela-precos">
+      <thead><tr><th>Serviço</th><th>Valor</th><th>Prazo</th></tr></thead>
+      <tbody>
+      <tr><td>Formatação sem backup</td><td>R$ 60,00</td><td>2 dias</td></tr><tr>
+      <tr><td>Formatação com backup até 500 GB</td><td>R$ 90,00</td><td>2 dias</td></tr>
+      <tr><td>Formatação com backup acima de 500 GB</td><td>R$ 130,00</td><td>2 dias</td></tr>
+      <tr><td>Reinstalação de sistema operacional</td><td>R$ 160,00</td><td>2 dias</td></tr>
+      <tr><td>Limpeza preventiva interna/externa</td><td>R$ 60,00</td><td>2 dias</td></tr>
+      <tr><td>Instalação de aplicativos</td><td>R$ 40,00</td><td>1 dia</td></tr>
+      <tr><td>Recuperação do sistema</td><td>R$ 45,00</td><td>2 dias</td></tr>
+      <tr><td>Verificação e remoção de vírus</td><td>R$ 20,00</td><td>1 dia</td></tr>
+      <tr><td>Só substituição de fonte</td><td>R$ 50,00</td><td>1 dia</td></tr>
+      <tr><td>Montagem completa de PC</td><td>R$ 80,00</td><td>2 dias</td></tr>
+      <tr><td>Reinstalação de sistema operacional</td><td>R$ 160,00</td><td>2 dias</td></tr>
+      <tr><td>Limpeza preventiva interna/externa</td><td>R$ 60,00</td><td>2 dias</td></tr>
+      <tr><td>Instalação de aplicativos</td><td>R$ 40,00</td><td>1 dia</td></tr>
+      <tr><td>Recuperação do sistema</td><td>R$ 45,00</td><td>2 dias</td></tr>
+      </tbody>
+      </table>
+  </div>
+  <div id="roteadores" class="tab-content">
+    <table class="tabela-precos">
+      <thead><tr><th>Serviço</th><th>Valor</th><th>Prazo</th></tr></thead>
+      <tbody>
+      <tr><td>Configuração de Rede Sem Fio</td><td>R$ 60,00</td><td>1 dia</td></tr><tr>
+      <tr><td>Configuração de compartilhamento de rede</td><td>R$ 40,00</td><td>1 dia</td></tr><tr>
+      <tr><td>Troca de Equipamento</td><td>R$ 20,00</td><td>por hora</td></tr><tr>
+    <tbody>
+    </table>
+  </div>
+  <div id="hd" class="tab-content">
+    <table class="tabela-precos">
+      <thead><tr><th>Serviço</th><th>Valor</th><th>Prazo</th></tr></thead>
+      <tbody>
+        <tr><td>Recuperação de dados</td><td>R$ 150,00</td><td>5 dias</td></tr>
+        <tr><td>Reparar setores ruins</td><td>R$ 20,00</td><td>2 dias</td></tr>
+      </tbody>
+    </table>
+  </div>
+<div id="outros" class="tab-content">
+    <table class="tabela-precos">
+      <thead><tr><th>Serviço</th><th>Valor</th><th>Prazo</th></tr></thead>
+      <tbody>
+      <tr><td>Teclado</td><td>R$ 60,00</td><td>Consulte-nos</td></tr><tr>
+      <tr><td>Pen Driver's</td><td>R$ 40,00</td><td>Consulte-nos</td></tr><tr>
+      <tr><td>Mouse sem fio</td><td>R$ 60,00</td><td>Consulte-nos</td></tr><tr>
+        <tr><td>Mouse USB</td><td>R$ 35,00</td><td>Consulte-nos</td></tr>
+        <tr><td>Teclado USB</td><td>R$ 45,00</td><td>Consulte-nos</td></tr>
+        <tr><td>Headset com Microfone</td><td>R$ 80,00</td><td>Consulte-nos</td></tr>
+        <tr><td>Monitor LED 21.5"</td><td>R$ 720,00</td><td>Consulte-nos</td></tr>
+        <tr><td>Roteador Wi-Fi 300Mbps</td><td>R$ 120,00</td><td>Consulte-nos</td></tr>
+        <tr><td>Adaptador USB Wi-Fi</td><td>R$ 60,00</td><td>Consulte-nos</td></tr>
+        <tr><td>Cabo de Rede 5 metros</td><td>R$ 25,00</td><td>Consulte-nos</td></tr>
+        <tr><td>Switch 8 portas</td><td>R$ 140,00</td><td>Consulte-nos</td></tr>
+        <tr><td>Estabilizador 500VA</td><td>R$ 160,00</td><td>Consulte-nos</td></tr>
+        <tr><td>Impressora Multifuncional</td><td>R$ 650,00</td><td>Consulte-nos</td></tr>
+      </tbody>
+    <tbody>
+    </table>
+</div>
+</section>
+    <!-- Categoria -->
+    <section id="loja">
+        <h2>Loja de Equipamentos e Peças</h2>
+        <div style="text-align: center; margin-bottom: 10px;">
+            <div class="loja-categorias">
+                <button class="active">Todos</button>
+                <button>Periféricos</button>
+                <button>Redes</button>
+                <button>Componentes</button>
+                <button>Acessórios</button>
+            </div>
+            <div class="loja-lista">
+                <!-- Produtos -->
+                <div class="produto" data-category="Periféricos">
+  <img src="https://oechsle.vteximg.com.br/arquivos/ids/4553144/image-471a3444301746e7a1e760ef89001e67.jpg?v=637657864408070000" alt="Mouse Gamer">
+  <h4>Mouse Gamer</h4>
+  <p>R$ 75,00</p>
+  <div style="margin-top: 10px;">
+    <a href="https://wa.me/5588997139954?text=Olá! Gostaria de comprar o produto: Mouse Gamer - R$75,00." target="_blank" style="color: white; background: #25d366; padding: 5px 10px; border-radius: 5px; text-decoration: none;">WhatsApp</a>
+    <a href="https://mpago.li/2Q6oTKv" target="_blank" style="color: white; background: green; padding: 5px 10px; border-radius: 5px; text-decoration: none; margin-left: 5px;">Comprar Online</a>
+    <a href="checkout.html?produto=Mouse%20Gamer" style="color: white; background: blue; padding: 5px 10px; border-radius: 5px; text-decoration: none; margin-left: 5px;">Checkout Interno</a>
+  </div>
+</div>
+
+                <div class="produto" data-category="Periféricos">
+                    <img alt="Teclado Mecânico" src="https://www.oderco.com.br/media/catalog/product/cache/a09cb7e3a42dd2f134ff88c47e22ea43/2/0/208581_2-17283068757038778.jpeg" />
+                    <h4>Teclado Mecânico</h4>
+                    <p>R$ 230,00</p>
+                
+        <div style="margin-top: 10px;">
+            <a href="https://wa.me/5588997139954?text=Olá! Gostaria de comprar o produto: Teclado Mecânico - R$ 230,00." target="_blank" style="color: white; background: #25d366; padding: 5px 10px; border-radius: 5px; text-decoration: none;">WhatsApp</a>
+            <a href="https://pagamento.com/teclado%20mecânico" target="_blank" style="color: white; background: green; padding: 5px 10px; border-radius: 5px; text-decoration: none; margin-left: 5px;">Comprar Online</a>
+            <a href="checkout.html?produto=Teclado%20Mecânico" style="color: white; background: blue; padding: 5px 10px; border-radius: 5px; text-decoration: none; margin-left: 5px;">Checkout Interno</a>
+        </div>
+        
+</div>
+                <div class="produto" data-category="Redes">
+                    <img alt="Roteador Wi-Fi" src="https://media.pichau.com.br/media/catalog/product/cache/2f958555330323e505eba7ce930bdf27/r/t/rt-ax82u-v29.jpg" />
+                    <h4>Roteador Wi-Fi</h4>
+                    <p>R$ 130,00</p>
+                
+        <div style="margin-top: 10px;">
+            <a href="https://wa.me/5588997139954?text=Olá! Gostaria de comprar o produto: Roteador Wi-Fi - R$ 130,00." target="_blank" style="color: white; background: #25d366; padding: 5px 10px; border-radius: 5px; text-decoration: none;">WhatsApp</a>
+            <a href="https://pagamento.com/roteador%20wi-fi" target="_blank" style="color: white; background: green; padding: 5px 10px; border-radius: 5px; text-decoration: none; margin-left: 5px;">Comprar Online</a>
+            <a href="checkout.html?produto=Roteador%20Wi-Fi" style="color: white; background: blue; padding: 5px 10px; border-radius: 5px; text-decoration: none; margin-left: 5px;">Checkout Interno</a>
+        </div>
+        
+</div>
+                <div class="produto" data-category="Componentes">
+                    <img alt="HD SSD 240GB" src="https://m.media-amazon.com/images/I/714V+hziOzL.jpg" />
+                    <h4>HD SSD 240GB</h4>
+                    <p>R$ 155,00</p>
+                
+        <div style="margin-top: 10px;">
+            <a href="https://wa.me/5588997139954?text=Olá! Gostaria de comprar o produto: HD SSD 240GB - R$ 155,00." target="_blank" style="color: white; background: #25d366; padding: 5px 10px; border-radius: 5px; text-decoration: none;">WhatsApp</a>
+            <a href="https://pagamento.com/hd%20ssd%20240gb" target="_blank" style="color: white; background: green; padding: 5px 10px; border-radius: 5px; text-decoration: none; margin-left: 5px;">Comprar Online</a>
+            <a href="checkout.html?produto=HD%20SSD%20240GB" style="color: white; background: blue; padding: 5px 10px; border-radius: 5px; text-decoration: none; margin-left: 5px;">Checkout Interno</a>
+        </div>
+        
+</div>
+                <!-- Novos itens -->
+                <div class="produto" data-category="Periféricos">
+                    <img alt="Fone de Ouvido Gamer" src="https://kidverte.vteximg.com.br/arquivos/ids/169308-1000-1000/Fone-de-Ouvido-Gamer-KP-489-080920.jpg?v=637802743936100000" />
+                    <h4>Fone de Ouvido Gamer</h4>
+                    <p>R$ 120,00</p>
+                
+        <div style="margin-top: 10px;">
+            <a href="https://wa.me/5588997139954?text=Olá! Gostaria de comprar o produto: Fone de Ouvido Gamer - R$ 120,00." target="_blank" style="color: white; background: #25d366; padding: 5px 10px; border-radius: 5px; text-decoration: none;">WhatsApp</a>
+            <a href="https://pagamento.com/fone%20de%20ouvido%20gamer" target="_blank" style="color: white; background: green; padding: 5px 10px; border-radius: 5px; text-decoration: none; margin-left: 5px;">Comprar Online</a>
+            <a href="checkout.html?produto=Fone%20de%20Ouvido%20Gamer" style="color: white; background: blue; padding: 5px 10px; border-radius: 5px; text-decoration: none; margin-left: 5px;">Checkout Interno</a>
+        </div>
+        
+</div>
+                <div class="produto" data-category="Acessórios">
+                    <img alt="Mousepad XXL" src="https://i5.walmartimages.com/seo/Insten-RGB-Mouse-Pad-Gaming-XXL-Extended-LED-Soft-Cloth-with-4-USB-Port-Mat-Ergonomic-Anti-Slip-Rubber-Base-White-31-5-x-12-x-0-16-in_caa0b049-c839-4416-92b3-7a604c9e4d0a.aeee7b7c3f9d6aa41cbabb6d59db47ee.jpeg"
+                    />
+                    <h4>Mousepad XXL</h4>
+                    <p>R$ 45,00</p>
+                
+        <div style="margin-top: 10px;">
+            <a href="https://wa.me/5588997139954?text=Olá! Gostaria de comprar o produto: Mousepad XXL - R$ 45,00." target="_blank" style="color: white; background: #25d366; padding: 5px 10px; border-radius: 5px; text-decoration: none;">WhatsApp</a>
+            <a href="https://pagamento.com/mousepad%20xxl" target="_blank" style="color: white; background: green; padding: 5px 10px; border-radius: 5px; text-decoration: none; margin-left: 5px;">Comprar Online</a>
+            <a href="checkout.html?produto=Mousepad%20XXL" style="color: white; background: blue; padding: 5px 10px; border-radius: 5px; text-decoration: none; margin-left: 5px;">Checkout Interno</a>
+        </div>
+        
+</div>
+<div class="produto" data-category="Acessórios">
+                    <img alt="Hub usb 3.0 4 portas" src="https://images-americanas.b2w.io/produtos/3516692597/imagens/acessorio-para-notebook-computador-escritorio-hub-usb-3-0-4-portas/3516692597_1_large.jpg"
+                    />
+                    <h4>Hub usb 3.0 4 portas</h4>
+                    <p>R$ 70,00</p>
+                
+        <div style="margin-top: 10px;">
+            <a href="https://wa.me/5588997139954?text=Olá! Gostaria de comprar o produto: Hub usb 3.0 4 portas - R$ 70,00." target="_blank" style="color: white; background: #25d366; padding: 5px 10px; border-radius: 5px; text-decoration: none;">WhatsApp</a>
+            <a href="https://pagamento.com/hub%20usb%203.0%204%20portas" target="_blank" style="color: white; background: green; padding: 5px 10px; border-radius: 5px; text-decoration: none; margin-left: 5px;">Comprar Online</a>
+            <a href="checkout.html?produto=Hub%20usb%203.0%204%20portas" style="color: white; background: blue; padding: 5px 10px; border-radius: 5px; text-decoration: none; margin-left: 5px;">Checkout Interno</a>
+        </div>
+        
+</div>
+                <div class="produto" data-category="Componentes">
+                    <img alt="Placa de Vídeo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8Kr5NvG28Yw_aIxEkOtCg3-baf9IjTZHTfhFhwOHRQG2mTa28ikPrRlt1sXFFlZ1DggE&usqp=CAU" />
+                    <h4>Placa de Vídeo RTX 3060 Ti</h4>
+                    <p>R$ 1.200,00</p>
+                
+        <div style="margin-top: 10px;">
+            <a href="https://wa.me/5588997139954?text=Olá! Gostaria de comprar o produto: Placa de Vídeo RTX 3060 Ti - R$ 1.200,00." target="_blank" style="color: white; background: #25d366; padding: 5px 10px; border-radius: 5px; text-decoration: none;">WhatsApp</a>
+            <a href="https://pagamento.com/placa%20de%20vídeo%20rtx%203060%20ti" target="_blank" style="color: white; background: green; padding: 5px 10px; border-radius: 5px; text-decoration: none; margin-left: 5px;">Comprar Online</a>
+            <a href="checkout.html?produto=Placa%20de%20Vídeo%20RTX%203060%20Ti" style="color: white; background: blue; padding: 5px 10px; border-radius: 5px; text-decoration: none; margin-left: 5px;">Checkout Interno</a>
+        </div>
+        
+</div>
+<div class="produto" data-category="Componentes">
+                    <img alt="Placa de Mãe" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6k0FCFsOyPYnSDD2ke5eIbszwSGa2j_1OF6c4q9Qrn3iT7na4pePnbo9xfFrCZ4glO2E&usqp=CAU" />
+                    <h4>Placa Mãe para PC</h4>
+                    <p>R$ 700,00</p>
+                
+        <div style="margin-top: 10px;">
+            <a href="https://wa.me/5588997139954?text=Olá! Gostaria de comprar o produto: Placa Mãe para PC - R$ 700,00." target="_blank" style="color: white; background: #25d366; padding: 5px 10px; border-radius: 5px; text-decoration: none;">WhatsApp</a>
+            <a href="https://pagamento.com/placa%20mãe%20para%20pc" target="_blank" style="color: white; background: green; padding: 5px 10px; border-radius: 5px; text-decoration: none; margin-left: 5px;">Comprar Online</a>
+            <a href="checkout.html?produto=Placa%20Mãe%20para%20PC" style="color: white; background: blue; padding: 5px 10px; border-radius: 5px; text-decoration: none; margin-left: 5px;">Checkout Interno</a>
+        </div>
+        
+</div>
+                <div class="produto" data-category="Redes">
+                    <img alt="Repetidor Wi-Fi" src="https://mastertek.bwimg.com.br/mastertek/produtos/repetidor-de-sinal-amplificador-wireless-wi-fi-300mbps-tp-link-tl-wa850re-1690824822.5235.jpeg" />
+                    <h4>Repetidor Wi-Fi</h4>
+                    <p>R$ 150,00</p>
+                
+        <div style="margin-top: 10px;">
+            <a href="https://wa.me/5588997139954?text=Olá! Gostaria de comprar o produto: Repetidor Wi-Fi - R$ 150,00." target="_blank" style="color: white; background: #25d366; padding: 5px 10px; border-radius: 5px; text-decoration: none;">WhatsApp</a>
+            <a href="https://pagamento.com/repetidor%20wi-fi" target="_blank" style="color: white; background: green; padding: 5px 10px; border-radius: 5px; text-decoration: none; margin-left: 5px;">Comprar Online</a>
+            <a href="checkout.html?produto=Repetidor%20Wi-Fi" style="color: white; background: blue; padding: 5px 10px; border-radius: 5px; text-decoration: none; margin-left: 5px;">Checkout Interno</a>
+        </div>
+        
+</div>
+            </div>
+    </section>
+    <!-- Sessão de depoimentos -->
+<section id="depoimentos">
+  <h2>Depoimentos de Clientes</h2>
+  <div class="depoimentos-container">
+    <div class="depoimento ativo">
+      <p>"Ótima loja, produtos de alta qualidade e entrega rápida. Recomendo!"</p>
+      <span>- João S.</span>
+    </div>
+    <div class="depoimento">
+      <p>"Excelente atendimento e preços justos. Sempre compro aqui."</p>
+      <span>- Maria P.</span>
+    </div>
+    <div class="depoimento">
+      <p>"Produtos compatíveis com minha necessidade e atendimento profissional."</p>
+      <span>- Carlos M.</span>
+    </div>
+  </div>
+</section>
+    <section id="sobre">
+        <h2>Sobre Nós</h2>
+        <p style="text-align:center; max-width: 800px; margin: 0 auto;">A Dtech Informática é uma empresa líder especializada em manutenção e assistência técnica de equipamentos eletrônicos. Com uma equipe altamente qualificada e comprometida, oferecemos soluções rápidas, eficazes e personalizadas, garantindo a máxima
+            satisfação dos nossos clientes. Nosso foco está na qualidade do atendimento, inovação constante e na construção de relacionamentos duradouros..</p>
+    </section>
+    <section id="contato">
+        <h2>Contato</h2>
+        <p style="text-align:center;">Endereço: Rua Eubia Barroso, 2674 - Centro, Itapipoca - CE</p>
+        <p style="text-align:center;">Whatsapp: <a href="https://wa.me/5588997139954" target="_blank">(88) 99713-9954</a></p>
+        <p style="text-align:center;">Email: <a href="mailto:domingosbarroson@gmail.com">domingosbarroson@gmail.com</a></p>
+        <div style="text-align:center; margin-top:10px;">
+            <a href="https://wa.me/5588997139954" style="margin: 0 10px; color: #409FDA;" target="_blank"><i class="fab fa-facebook fa-lg"></i></a>
+            <a href="https://wa.me/5588997139954" style="margin: 0 10px; color: #409FDA;" target="_blank"><i class="fab fa-instagram fa-lg"></i></a>
+        </div>
+    </section>
+    <footer>
+        <div class="bg-gray-100 py-6">
+            <div class="max-w-6xl mx-auto px-4 flex flex-col items-center sm:flex-row sm:justify-between">
+                <p class="text-sm text-gray-600 mb-4 sm:mb-0">Formas de pagamento:</p>
+                <div class="flex items-center space-x-4">
+                    <!-- Ícone do Pix -->
+                    <img alt="Pix" class="h-8 w-auto" src="https://img.terabyteshop.com.br/cartoes/fpr_pixMP.png" title="Pix" />
+                    <!-- Ícone de Cartão de Crédito -->
+                    <img alt="Cartão de Crédito" class="h-8 w-auto" src="https://img.terabyteshop.com.br/cartoes/fpr_mercadopago.png" title="Cartão de Crédito" />
+                    <!-- Ícone de Boleto -->
+                    <img alt="Boleto Bancário" class="h-8 w-auto" src="https://img.terabyteshop.com.br/cartoes/fpr_boleto.png" title="Boleto Bancário" />
+                    <!-- Ícone de Nupagamentos -->
+                    <img alt="Boleto Bancário" class="h-8 w-auto" src="https://img.terabyteshop.com.br/cartoes/fpr_nupay.png" title="Boleto Bancário" />
+                    <div class="bg-gray-100 py-6">
+                        <div class="max-w-6xl mx-auto px-4 flex flex-col items-center sm:flex-row sm:justify-between">
+                            <p class="text-sm text-gray-600 mb-4 sm:mb-0">Segurança:</p>
+                            <div class="flex items-center space-x-4">
+                                <!-- Ícone de Site Seguro Google -->
+                                <img alt="Boleto Bancário" class="h-8 w-auto" src="https://img.terabyteshop.com.br/selos/google-site-seguro.png" title="Boleto Bancário" />
+                            </div>
+                        </div>
+                    </div>
+
+                    © 2025 Dtech Informática - Todos os direitos reservados.
+                </div>
+            </div>
+        </div>
+    </footer>
+    <a class="whatsapp-float" href="https://wa.me/5588997139954" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+<script src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js"
+data-preference-id="57091170-99fef910-3d8e-45ee-9737-b7b600b0e4a6" data-source="button">
+</script>
+
+</a>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+<script src="script.js"></script>
+</body>
+</html>
+        <!-- Script de filtragem -->
+        
+<script src="script.js"></script>
+</body>
+
+<script src="script.js"></script>
+</body>
+
+<script src="script.js"></script>
+</body>
+</html>
